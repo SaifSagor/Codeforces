@@ -1,0 +1,16 @@
+n = int(input())
+li = []
+ 
+for i in range(n):
+    count = 0
+    a, b , c = map(int , input().split())
+    if a == 1:
+        count = count + 1
+    if b == 1:
+        count = count + 1
+    if c == 1:
+        count = count + 1
+    if count >=2:
+        li.append(count)
+ 
+print(len(li))
