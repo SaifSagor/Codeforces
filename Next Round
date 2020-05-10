@@ -1,0 +1,10 @@
+n,k = map(int,input().split())
+numList = input().split()
+count = 0
+for i in numList:
+    n = int(i)
+    if n > 0 and n >= int(numList[k - 1]):
+        count = count + 1
+ 
+print(count)
+ 
