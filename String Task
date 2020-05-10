@@ -1,0 +1,15 @@
+word = input()
+empty_word = ""
+vowel = ["A" , "O" , "Y" , "E" , "U" , "I"]
+li = []
+u_word = word.upper()
+ 
+for i in u_word:
+    li.append(i)
+ 
+for j in li:
+    if j not in vowel:
+        j = "." + j.lower()
+        empty_word = empty_word + j
+ 
+print(empty_word)
