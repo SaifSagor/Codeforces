@@ -1,0 +1,5 @@
+var = input()
+if ('0000000' in var) or ('1111111' in var):
+    print("YES")
+else:
+    print("NO")
