@@ -1,0 +1,7 @@
+s_var = input()
+li = []
+for c in s_var:
+    li.append(c)
+li[0] = li[0].upper()
+word = "".join(li)
+print(word)
