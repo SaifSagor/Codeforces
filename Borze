@@ -1,0 +1,7 @@
+s = input()
+if "." in s or "-." in s or "--" in s:
+    n_s = s.replace("--" , "2")
+    n_s1 = n_s.replace("-." , "1")
+    n_s2 = n_s1.replace("." , "0")
+
+print(n_s2)
