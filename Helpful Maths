@@ -1,0 +1,5 @@
+word = input()
+n_word = word.split("+")
+n_word.sort()
+ans = "+".join(n_word)
+print(ans)
