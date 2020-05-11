@@ -1,0 +1,16 @@
+s = input()
+u_c = 0
+l_c = 0
+for c in s:
+    if c == c.upper():
+        u_c = u_c + 1
+    else:
+        l_c = l_c + 1
+if u_c > l_c:
+    n_s = s.upper()
+elif l_c > u_c:
+    n_s = s.lower()
+else:
+    n_s = s.lower()
+
+print(n_s)
