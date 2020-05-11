@@ -1,0 +1,10 @@
+year = input()
+n = True
+while n:
+    year = int(year) + 1
+    year = str(year)
+    if not (((year[0] == year[1] or year[0] == year[2] or year[0] == year[3]) or (year[1] == year[2] or year[1] == year[3])) or (year[2] == year[3])):
+        n_year = year
+        n = False
+
+print(n_year)
