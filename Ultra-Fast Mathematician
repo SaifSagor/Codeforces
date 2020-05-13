@@ -1,0 +1,11 @@
+num1 = input()
+num2 = input()
+num3 = ""
+
+for i in range(len(num1)):
+    if num1[i] != num2[i]:
+        num3 = num3 + "1"
+    else:
+        num3 = num3 + "0"
+
+print(num3)
