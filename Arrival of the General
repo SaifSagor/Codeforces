@@ -1,0 +1,33 @@
+n = int(input())
+li = input().split()
+n_li = []
+for item in li:
+    n_li.append(int(item))
+max_li = max(n_li)
+min_li = min(n_li)
+
+min_index = []
+for index , value in enumerate(n_li):
+    if value == min_li:
+        min_index.append(index)
+i_min = max(min_index)
+t1 = len(n_li) - i_min -1
+count1 = 0
+for j in range(t1):
+    count1 = count1 + 1
+
+max_index = []
+for index , value in enumerate(n_li):
+    if value == max_li:
+        max_index.append(index)
+i_max = min(max_index)
+count2 = 0
+for j in range(i_max):
+    count2 = count2 + 1
+
+count = count1 + count2
+if i_max > i_min:
+    count = count - 1
+
+print(count)
+
