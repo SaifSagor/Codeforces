@@ -1,0 +1,13 @@
+n = int(input())
+
+li = input().split()
+n_li = []
+for item in li:
+    n_li.append(int(item))
+
+sum = 0
+for j in range(len(n_li)):
+    sum = sum + n_li[j]/100
+
+ans = (sum / n ) * 100
+print("{:.12f}".format(ans))
