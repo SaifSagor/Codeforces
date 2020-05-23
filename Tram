@@ -1,0 +1,17 @@
+n = int(input())
+num = []
+li = []
+for i in range(n):
+    i , j = map(int , input().split())
+    num.append(i)
+    num.append(j)
+
+sum = int(num[0]) + int(num[1])
+li.append(sum)
+
+for k in range(2, n*2 -1 , 2):
+    sum = (sum - int(num[k])) + int(num[k+1])
+    li.append(sum)
+
+ans = max(li)
+print(ans)
