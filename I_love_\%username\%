@@ -1,0 +1,16 @@
+n = int(input())
+pts =input().split()
+
+mx = int(pts[0])
+mi = int(pts[0])
+count = 0
+
+for i in range(len(pts)):
+    if int(pts[i]) > mx:
+        mx = int(pts[i])
+        count = count + 1
+    if int(pts[i]) < mi:
+        mi = int(pts[i])
+        count = count + 1
+
+print(count)
