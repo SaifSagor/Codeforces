@@ -1,0 +1,16 @@
+shoes = input().split()
+
+li = {}
+
+for i in range(len(shoes)):
+    if shoes[i] in li:
+        li[shoes[i]] = li[shoes[i]] + 1
+    else:
+        li[shoes[i]] = 1
+
+sum = 0
+for value in li.values():
+    if value > 1:
+        sum = sum + (value -1) 
+    
+print(sum)
