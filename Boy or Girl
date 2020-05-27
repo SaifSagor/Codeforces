@@ -1,0 +1,9 @@
+n = input()
+name = n.lower()
+
+set_name = set(name)
+
+if len(set_name) % 2 != 0:
+    print("IGNORE HIM!")
+elif len(set_name) % 2 == 0:
+    print("CHAT WITH HER!")
