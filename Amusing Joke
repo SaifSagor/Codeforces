@@ -1,0 +1,12 @@
+s1 = input()
+s2 = input()
+s3 = input()
+
+s4 = s1 + s2 
+r1 = "".join(sorted(s4))
+r2 = "".join(sorted(s3))
+
+if r1 == r2:
+    print('YES')
+else:
+    print('NO')    
