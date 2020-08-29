@@ -1,0 +1,33 @@
+#include<iostream>
+#include<iomanip>
+#include<stdlib.h>
+#include<bits/stdc++.h>
+using namespace std;
+ 
+int main(){
+ 
+    int t , n , m , sum;
+    vector<int> result;
+    cin >> t;
+    while ( t!=0)
+    {
+        cin >> n >> m;
+        if(n == 1){
+            sum = 0;
+        }
+        else if(n == 2){
+            sum = m; 
+        }
+        else if(n > 2){
+            sum = 2 * m; 
+        }
+        result.push_back(sum);
+        t = t-1;
+    }
+ 
+    for(auto i= result.begin() ; i != result.end() ; i++){
+        cout << *i << endl;
+    }
+    
+    return 0;
+}
